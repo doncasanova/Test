@@ -9,7 +9,20 @@ body {
 }
 
 #myVideo {
-    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#myVideo2 {
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#myVideo3 {
     right: 0;
     bottom: 0;
     min-width: 100%;
@@ -17,15 +30,33 @@ body {
 }
 
 .content {
-    position: fixed;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 25%;
+    background: transparent;
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
 }
 
-#myBtn {
+.content2 {
+    position: absolute;
+    top: 25%;
+    background: transparent;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+.content3 {
+    position: absolute;
+    top: 25%;
+    background: transparent;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+#myBtn, #myBtn2, #myBtn3 {
     width: 200px;
     font-size: 18px;
     padding: 10px;
@@ -36,6 +67,15 @@ body {
 }
 
     #myBtn:hover {
+        background: #ddd;
+        color: black;
+    }
+
+    #myBtn2:hover {
+        background: #ddd;
+        color: black;
+    } 
+    #myBtn3:hover {
         background: #ddd;
         color: black;
     }
