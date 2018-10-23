@@ -79,3 +79,8 @@ body {
         background: #ddd;
         color: black;
     }
+    .imageStyle {
+        margin: 10px;
+        height: 250px;
+        width: 100%;
+    }
