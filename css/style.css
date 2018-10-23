@@ -84,3 +84,6 @@ body {
         height: 250px;
         width: 100%;
     }
+.container:hover .imageStyle {
+    margin: 100px;
+}
