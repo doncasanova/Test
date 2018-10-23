@@ -4,6 +4,14 @@
 var video = document.getElementById("myVideo");
 var btn = document.getElementById("myBtn");
 
+
+
+$(document).on("click", "#myBtn", function () {
+    console.log("test click" + btn);
+    myFunction();
+    
+});
+
 function myFunction() {
     if (video.paused) {
         video.play();
