@@ -8,3 +8,6 @@ function addImage() {
 
 }
 
+
+//$('#myModal').modal(show)
+
