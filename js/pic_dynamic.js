@@ -2,23 +2,9 @@ var image = ["./images/dixie on a bird.jpg", "./images/dixie.jpg", "./images/foo
 addImage();
 
 function addImage() {
-<<<<<<< HEAD
     for (i = 0; i < image.length; i++) {
-    $(".insertImagesHere").append(`<div class="col-3 "><img class="imageStyle imageHover "src= "${image[i]}" alt="Italian Trulli"><h1>Heading</h1><p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p><button id="myBtn" onclick="myFunction()">Pause</button></div>`);
+    $(".insertImagesHere").append(`<div class="col-3 test"><img class="imageStyle imageHover "src= "${image[i]}" alt="Italian Trulli"><h1>Heading</h1><p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p><button id="myBtn" onclick="myFunction()">Pause</button></div>`);
 }
 
 }
-=======
-    console.log("inside addImage");
-    //$(".test").append("include/test.html");
-    $(".insertImagesHere").append(` <div class="container test"><video autoplay muted loop id="myVideo"><source src=" ${image.imageAddy}" type="video/mp4" </video></div>`);
-    $(".test").append(`<div class="content"><button id="myBtn">Pause</button> Your browser does not support HTML5 video.<h1>Heading</h1><p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>  </div> </div> </div> </div> `);
-}
 
-
-
-//$("#link").click(function () {
-//    $("#include").append("include/test.html");
-//});
-
->>>>>>> don
