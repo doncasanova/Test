@@ -13,6 +13,7 @@ function addImage() {
 }
 
 $(".imageContainer").on("click", function () {
+    $(".insertImagesModal").empty();
     var imageModal = $('.imageContainer').attr('id');
     console.log(imageModal);
     $(".insertImagesModal").append(`<img class="imageStyle"src= "${imageModal}" alt="Italian Trulli">`);
