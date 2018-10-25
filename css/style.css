@@ -84,14 +84,27 @@ body {
         color: black;
     }
 .imageStyle {
-    height: 100%;
-    width: 100%;
+    width: auto;
+    /*margin: 10px auto;*/
+    max-width: 100%;
+    max-height: 300px;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1.5px;
+    border-color: white;
 }
 
 
+
 .imageContainer {
-    height: 50%;
-    width: 33.3%;
+    width: auto;
+    /*margin: 10px auto;*/
+    max-width: 100%;
+    max-height: 300px;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1.5px;
+    border-color: white;
 }
 
 
