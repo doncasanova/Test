@@ -8,6 +8,10 @@ body {
     font-size: 17px;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 #myVideo {
     right: 0;
     bottom: 0;
@@ -80,10 +84,14 @@ body {
         color: black;
     }
 .imageStyle {
-    
+    height: 100%;
+    width: 100%;
+}
+
+
+.imageContainer {
     height: 50%;
     width: 33.3%;
-   
 }
 
 

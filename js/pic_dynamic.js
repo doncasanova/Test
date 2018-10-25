@@ -1,13 +1,21 @@
 var image = ["./images/dixie on a bird.jpg", "./images/dixie.jpg", "./images/food turkey 068.JPG", "./images/skiing.jpg", "./images/SnarlingWolf.jpg"];
 addImage();
-
+var imageNumber = 0;
+var imageModal = 0 ;
 function addImage() {
     for (i = 0; i < image.length; i++) {
-    $(".insertImagesHere").append(`<img class="imageStyle imageHover "src= "${image[i]}" alt="Italian Trulli">`);
+        
+        $(".insertImagesHere").append(`<div id = "${image[i]}" class="imageContainer"><a href="#" class="" data-toggle="modal" data-target="#largeModal"><img class="imageStyle imageHover pointer"src= "${image[i]}" alt="Italian Trulli"></a></div>`);
+        var imageNumber = i;
+       
 }
 
 }
+var imageModal = $('.imageContainer').attr('id');
+$(document).on("click", function () {
+    
+    console.log(imageModal);
+    $(".insertImagesModal").append(`<img class="imageStyle"src= "${imageModal}" alt="Italian Trulli">`);
+});
 
-
-//$('#myModal').modal(show)
 
