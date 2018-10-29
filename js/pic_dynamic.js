@@ -16,8 +16,12 @@ const newLocal = ".imageStyle";
 
 $(newLocal).on("click", function () {
     $(".insertImagesModal").empty();
+    $("#myModalLabel").empty();
+    
     var imageModal = $(this).attr('src');
+    var imageModalName = imageModal.substr(9).slice(0, -4);
     $(".insertImagesModal").append(`<img class="modalImageStyle"src= "${imageModal}" alt="${imageModal}">`);
+    $("#myModalLabel").append(`<h4 id="myModalLabel" class="modal-title" >${imageModalName}</h4>`);
 });
 
 
