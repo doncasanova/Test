@@ -1,22 +1,23 @@
-var image = ["./images/dixie on a bird.jpg", "./images/dixie.jpg", "./images/food turkey 068.JPG", "./images/skiing.jpg", "./images/SnarlingWolf.jpg"];
+var image = [ "./images/dixie.jpg", "./images/dixie on a bird.jpg", "./images/food turkey 068.JPG", "./images/skiing.jpg", "./images/SnarlingWolf.jpg"];
 addImage();
 var imageNumber = 0;
 var imageModal = 0 ;
 function addImage() {
     for (i = 0; i < image.length; i++) {
         
-        $(".insertImagesHere").append(`<div id = "${image[i]}" class="imageContainer"><a href="#" class="" data-toggle="modal" data-target="#largeModal"><img class="imageStyle imageHover pointer"src= "${image[i]}" alt="Italian Trulli"></a></div>`);
+        $(".insertImagesHere").append(`<div id = "${image[i]}" class="imageContainer"><a href="#" class="" data-toggle="modal" data-target="#largeModal"><img class="imageStyle imageHover pointer"src= "${image[i]}" alt="${image[i]}"></a></div>`);
         var imageNumber = i;
        
 }
 
 }
 
-$(".imageContainer").on("click", function () {
+const newLocal = ".imageStyle";
+
+$(newLocal).on("click", function () {
     $(".insertImagesModal").empty();
-    var imageModal = $('.imageContainer').attr('id');
-    console.log(imageModal);
-    $(".insertImagesModal").append(`<img class="imageStyle"src= "${imageModal}" alt="Italian Trulli">`);
+    var imageModal = $(this).attr('src');
+    $(".insertImagesModal").append(`<img class="modalImageStyle"src= "${imageModal}" alt="${imageModal}">`);
 });
 
 
